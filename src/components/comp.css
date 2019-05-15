@@ -1,0 +1,15 @@
+ul{
+ 
+    text-align: center;
+    list-style: none;
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+li{
+    border: solid black 2px;
+    width: 100%;
+    margin: 0 auto;
+    margin: 2%;
+}

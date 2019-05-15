@@ -17,14 +17,14 @@ export const getCharacter = () => dispatch => {
     axios
       .get('https://swapi.co/api/people/')
       .then(res => {
-        console.log(res);
-        dispatch({ type: SWAPI_FETCHED, payload: res.data });
+        
+        dispatch({ type: SWAPI_FETCHED, payload: res.results });
       })
       .catch(err => {
-        console.log(err.response);
+        
         dispatch({
           type: SWAPI_FETCH_ERROR,
-          payload: `${err.response.status} ${err.response.statusText}`
+          payload: err
         });
       });
   };

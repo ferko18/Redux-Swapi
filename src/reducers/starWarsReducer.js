@@ -21,7 +21,7 @@ export const charsReducer = (state = initialState, action) => {
     case SWAPI_FETCHED:
       return {
         ...state,
-        characters: action.payload,
+        characters:  [...state.characters, ...action.payload],
         isFetching: false,
         error: ""
       };

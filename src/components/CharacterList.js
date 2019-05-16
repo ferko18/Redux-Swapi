@@ -1,5 +1,5 @@
 import React from "react";
-
+import './comp.css'
 import Character from "./Character";
 
 const CharacterList = props => {
